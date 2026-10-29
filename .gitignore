@@ -1,0 +1,16 @@
+# dependencies
+/node_modules
+
+# secrets: .env holds real credentials and must never be committed.
+# .env.example holds placeholders only and must be committed, so it is re-included.
+.env
+.env.*
+!.env.example
+
+# logs and tooling output
+*.log
+/coverage
+
+# misc
+.DS_Store
+*.pem
